@@ -1,0 +1,75 @@
+
+body {
+    background: antiquewhite;
+}
+
+
+/* The Progress bar */
+.bar{
+    width: 100px;
+    height: 5px;
+    background-color: grey;
+    border-radius: 10%;
+}
+.progress{
+    width: 50px;
+    background-color: black;
+    height: 5px;
+}
+
+  /* The Options section*/
+  section{
+    background-color: white;
+    margin: 2rem auto;
+    width: 50%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid grey;
+    border-radius: 4%;
+    padding: 2rem;
+}
+
+.option-container{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.option-text{
+    flex-grow: 3;
+}
+
+.option-body{
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+}
+.option-container.active .option-body{
+    max-height: 300px;
+}
+.option-image{
+    flex-grow: 1;
+    margin-left: 2rem;
+}
+
+.option-container button{
+    background-color: darkslategrey;
+    color: white;
+    padding: 0.4rem;
+    border-radius: 30%;
+}
+
+.title::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg);
+    background-size: contain;
+
+}
+
+#import{
+    margin-left: 2rem;
+}
